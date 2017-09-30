@@ -1,0 +1,78 @@
+html, body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: darkgray;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 12px solid #926a36;
+  padding: 10px;
+}
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand-seconds {
+  height: 1px;
+  background-color: gold;
+}
+
+.hand-minuts {
+  height: 4px;
+  background-color: brown;
+}
+
+.hand-hours {
+  background-color: brown;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.round {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0px);
+          transform: translateX(-50%) translateY(-50%) translateZ(0px);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+}
+
+/*# sourceMappingURL=jsclock.css.map */
